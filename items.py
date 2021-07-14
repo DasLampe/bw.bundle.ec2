@@ -26,7 +26,7 @@ for username, user_attrs in node.metadata.get('ec2', {}).get('users', {}).items(
         directories[home] = {
             'owner': username,
             'group': username,
-            'mode': "0751",
+            'mode': "0700",
             'needs': [
                 f'user:{username}',
             ]
